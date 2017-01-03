@@ -7,7 +7,7 @@ decks_nb <- 6
 
 dealer <- function() {
   deck <- tibble(card = as.integer(1:10), count = decks_nb*as.integer(c(rep(4, 9), 16))) #The 6 decks
-  first <- numeric(0) # The first car drew by the dealer
+  first <- numeric(0) # The first card drawn by the dealer
   values <- 0 #the value(s) of the dealer's hand
  
   while(all(values < 17)  |  (any(values < 17) & any(values > 21))){    #while all the values are < 17 or if there is one above but it's already bust
