@@ -1,5 +1,5 @@
 library(dplyr)
-llibrary(ggplot)
+library(ggplot)
 
 decks_nb <- 6
 
